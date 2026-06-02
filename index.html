@@ -4,24 +4,45 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Jordan's GC Hub Ultimate</title>
+
 <style>
 body{
-font-family:Arial;
-background:#0f172a;
-color:white;
-padding:20px;
+    font-family:Arial,sans-serif;
+    background:#0f172a;
+    color:white;
+    padding:20px;
+    margin:0;
 }
-.card{
-background:#1e293b;
-padding:15px;
-border-radius:12px;
-margin:10px 0;
-}
+
 h1{
-color:#38bdf8;
+    color:#38bdf8;
+    text-align:center;
+}
+
+.card{
+    background:#1e293b;
+    padding:15px;
+    border-radius:12px;
+    margin:15px 0;
+}
+
+button{
+    width:100%;
+    padding:12px;
+    margin:5px 0;
+    border:none;
+    border-radius:10px;
+    background:#38bdf8;
+    color:white;
+    font-size:16px;
+}
+
+button:hover{
+    background:#0ea5e9;
 }
 </style>
 </head>
+
 <body>
 
 <h1>🔥 Jordan's GC Hub Ultimate 🔥</h1>
@@ -29,10 +50,26 @@ color:#38bdf8;
 <div class="card">
 <h2>👑 Staff</h2>
 <p>Owner: Jordan</p>
+<p>Co-Owner: Cierra</p>
 </div>
 
 <div class="card">
-<h2>🎮 Included Systems</h2>
+<h2>🎮 Games & Activities</h2>
+
+<button onclick="alert('Imposter Mode Coming Soon')">👤 Imposter</button>
+
+<button onclick="alert('Zombie Survival Coming Soon')">🧟 Zombies</button>
+
+<button onclick="alert('Hide & Seek Coming Soon')">🙈 Hide & Seek</button>
+
+<button onclick="alert('Werewolf & Mafia Coming Soon')">🐺 Werewolf & Mafia</button>
+
+<button onclick="playRPS()">✂️ Rock Paper Scissors</button>
+
+</div>
+
+<div class="card">
+<h2>🏆 GC Systems</h2>
 <ul>
 <li>Roles & Permissions</li>
 <li>Staff Applications</li>
@@ -43,6 +80,13 @@ color:#38bdf8;
 <li>Announcements</li>
 <li>Events Calendar</li>
 <li>Polls & Voting</li>
+<li>Meme of the Week</li>
+<li>Battle Pass & XP</li>
+<li>GC Coins Shop</li>
+<li>Virtual Pets</li>
+<li>Hall of Fame</li>
+<li>Reports & Appeals</li>
+<li>Admin Dashboard</li>
 </ul>
 </div>
 
@@ -50,6 +94,14 @@ color:#38bdf8;
 <h2>🚀 Welcome</h2>
 <p>Official GC Hub Website</p>
 </div>
+
+<script>
+function playRPS(){
+    let choices=["Rock","Paper","Scissors"];
+    let bot=choices[Math.floor(Math.random()*3)];
+    alert("Bot picked: " + bot);
+}
+</script>
 
 </body>
 </html>
